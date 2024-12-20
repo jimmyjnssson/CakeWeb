@@ -204,15 +204,52 @@ footer {
     flex-direction: column;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .product {
         width: calc(50% - 20px);
     }
+
+    .container-home {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .image2 img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .image2 button {
+        position: static;
+        margin: 10px 0 0;
+    }
+
+
 }
 
 @media (max-width: 480px) {
     .product {
         width: calc(100% - 20px);
     }
+
+    header nav a {
+        font-size: 0.9rem;
+        margin: 0 10px;
+    }
+
+    .image2 img {
+        max-width: 90%;
+    }
+
+    .image2 button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+
 }
