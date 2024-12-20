@@ -1,0 +1,218 @@
+body, html {
+    font-family: "Dosis", serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+}
+
+header, footer {
+    background-color: #6b6a68;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container h1 {
+    
+    color: #06d6a0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+
+.product h3 {
+    margin: 10px 0;
+    font-weight: 200;
+}
+
+.product p {
+    margin: 10px;
+    font-weight: bold;
+}
+/* new css for homepage down below */
+
+
+
+.container-home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.container-home p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.image1 {
+    height: 100%; /* Half the page height */
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: #ececec;
+}
+
+.image1 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.image2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    position: relative; /* Enables positioning of child elements relative to this container */
+}
+
+.image2 img {
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: cover;
+}
+
+.image2 button {
+    position: absolute; /* Position the button relative to the container */
+    bottom: 30%; /* Adjust position from the bottom of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset for precise centering */
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #06d6a0;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.image2 button:hover {
+    background-color: #73dabe;
+}
+
+.image2 h5 {
+    color: #06d6a0;
+    font-size: 27px ;
+    position: absolute; /* Position the button relative to the container */
+    top: 8%; /* Adjust position from the bottom of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset for precise centering */
+
+}
+
+.about-container {
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container {
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #06d6a0;
+}
+
+.contact-form-container input, 
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #06d6a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #73dabe;
+}
+/* new css for homepage ends here */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: calc(100% - 20px);
+    }
+}
